@@ -1,0 +1,989 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Cửa Hàng TFT</title>
+      <style>html,*,::before,::after{box-sizing:border-box;margin:0;border:0;padding:0;outline:0}html,body{width:100%;height:100%}*{font-size:inherit;line-height:inherit;letter-spacing:inherit}a{color:inherit;text-decoration:none;cursor:pointer}button:focus,input:focus,select:focus{outline:0;box-shadow:none}@font-face{font-family:"iCiel Cadena";src:local("iCiel Cadena") format("truetype");src:url(iciel_cadena.fd7ea8811923c7e96820e21fea5bca9a.ttf) format("truetype")}@font-face{font-family:"UTM BryantLG";src:local("UTM BryantLG") format("truetype");src:url(utm_bryantlg.5c0354e9fdb8c254e5adddb25cd254a8.ttf) format("truetype")}@font-face{font-family:"UTM Kabel KT";src:local("UTM Kabel KT") format("truetype");src:url(utm_kabel_kt.dc9d83259995f68b006e8729db485520.ttf) format("truetype")}.scrollable{display:flex;width:100%;height:100%;-webkit-overflow-scrolling:touch}.scrollable>.scrollable-body{scrollbar-width:none;-ms-overflow-style:none;flex-grow:1;overflow:auto}.scrollable>.scrollable-body::-webkit-scrollbar{display:none}.scrollable>.scrollable-scrollbar{width:.3em;border-radius:.15em;background-color:#222;cursor:pointer;overflow:hidden}.scrollable-scrollbar>.scrollable-thumb{top:0;width:.3em;border-radius:.15em;background-color:#555}@media (max-width: 480px){.scrollable-scrollbar>.scrollable-thumb{transition:transform 0.05s linear}}html,body,*{font-family:'UTM BryantLG', Arial, sans-serif;letter-spacing:0.0125em}html,body{scrollbar-width:none;-ms-overflow-style:none;user-select:none}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}body{margin:auto;max-width:1920px;font-size:22px}@media (max-width: 1920px){body{font-size:1.1458vw}}@media (max-width: 480px){body{font-size:3.3333vw}}#app{position:relative;width:100%;height:0;padding-bottom:56.25%;line-height:1.25;color:white;background-color:black;overflow:hidden}#app img{pointer-events:none}@media (min-width: 1054px) and (max-width: 1056px) and (min-height: 637px) and (max-height: 639px){#app{padding-bottom:60.47%}#app .user,#app .topup{display:none}}@media (min-width: 481px){#app .scrollable>.scrollable-scrollbar{border:1px solid #2e8d92;background-color:transparent;overflow:visible}#app .scrollable-scrollbar>.scrollable-thumb{width:1em;height:1em;margin-left:calc(-0.35em - 1px);border-radius:50%;background-color:#6af2f8}}@media (max-width: 480px){#app{height:100%;padding-bottom:0}#app .scrollable>.scrollable-scrollbar{background-color:#2e8d9211;overflow:visible}#app .scrollable-scrollbar>.scrollable-thumb{width:0.2em;height:2em;border-radius:0.1em;background-color:#6af2f8}}</style>
+      <style>.home .featherknight{position:absolute;width:57.55%;height:98.52%;left:1.82%;top:-1%;cursor:pointer;z-index:1}.home .featherknight .body{position:relative;width:100%;padding-bottom:100%}.home .featherknight .image{background-image:url(featherknight.a36ab8130bdc1ac765290e0837c7e3e5.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:78.01%;height:76.2%;left:17.1%;top:5.8%;animation:u6181f283 0.5s ease-in-out alternate infinite;filter:drop-shadow(0 0 10px #b8ffff)}@keyframes u6181f283{100%{transform:translateY(-0.5em)}}.home .featherknight .background-1::before,.home .featherknight .background-1::after{background-image:url(featherknight_background_1.e6bd99a991273c2a1881cb0f7390e73b.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:96.29%;left:0;top:3.71%;content:'';opacity:0.85;filter:brightness(1.5)}.home .featherknight .background-1::after{transform:rotate(-45deg)}.home .featherknight .background-2{background-image:url(featherknight_background_2.4b39b7e2661a479f4f47a0bf19f74614.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:96.29%;left:0;top:3.71%;animation:uc1e46c75 1.15s linear infinite}@keyframes uc1e46c75{100%{transform:rotate(360deg)}}.home .bingo-heading .letters{filter:drop-shadow(0 0 0.3em rgba(4,240,255,0.6)) drop-shadow(0 0 0.5em rgba(139,255,245,0.6))}.home .background{background-image:url(background.f5f9be4d95fffb85f583759e29471deb.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:100%;left:0;top:0}.home .heading{position:absolute;width:48.44%;height:31.11%;left:4.53%;top:62.78%;transition:all .25s ease-out;z-index:1}.home .heading>.body{position:relative;width:100%;padding-bottom:35.97122%;cursor:pointer}.home .heading:hover .bingo-heading,.home .heading:hover .bingo-heading .letters{filter:brightness(1.05) drop-shadow(0 0 0.5em #49edf3)}.home .heading .description{position:absolute;width:100%;left:0;top:79.04%;text-align:center}.home .heading .description .body{display:inline-block;padding:0.6em 2.25em;border-radius:2.5em;text-align:center;background-color:#113d8c;white-space:pre}.home .heading .description .body>*{font-size:1.25em;font-family:'UTM BryantLG';font-weight:bold}.home .rocket{position:absolute;width:100%;height:100%;left:0;top:0}.home .rocket .body{position:relative;width:100%;padding-bottom:56.25%}.home .rocket .body::before{background-image:url(rocket.6ea673e24d9a2a0732c4240adb6d6fae.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:16.93%;height:27.96%;left:62.81%;top:9.54%;content:''}.home .rocket .body::after{background-image:url(rocket_gas.e5a231f2e5b674a2b22df6f51f26781f.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:46.61%;height:98.7%;left:38.07%;top:10.37%;content:'';animation:uaf38a9f2 0.5s linear alternate infinite}@keyframes uaf38a9f2{0%{opacity:0.75}80%{opacity:0.55}100%{opacity:0.55}}.home .rumble{background-image:url(rumble.05a59b751e19a9963678f24c2bd83b13.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:9.9%;height:17.59%;left:65.78%;top:45%}.home .vel-koz{background-image:url(vel_koz.3d5aaf19b4c61436760d3ae5ada1a4ff.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:24.95%;height:28.89%;left:36.77%;top:33.33%}.home .champions{position:absolute;width:100%;height:100%;left:0;top:0}.home .champions .body{position:relative;width:100%;padding-bottom:56.25%}.home .xayah{background-image:url(xayah.3602218d752f7624e9b078cb992724ae.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:20.26%;height:27.78%;left:56.51%;top:78.61%;animation:u1d6410ec 0.5s ease-in-out alternate infinite}@keyframes u1d6410ec{100%{transform:translateY(-0.5em)}}.home .thresh{background-image:url(thresh.701de871a83d97895c6b907b29ec1254.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:33.39%;height:51.2%;left:82.24%;top:40.28%;animation:u1361e907 0.5s ease-in-out alternate infinite;transform-origin:-250% -50%}@keyframes u1361e907{0%{transform:rotate(-0.5deg)}}.home .yasuo{background-image:url(yasuo.8edacc5a795c086b74fd201b4aed28a8.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:36.51%;height:42.87%;left:48.39%;top:61.11%;animation:u57c491c1 0.5s ease-in-out 0.25s alternate infinite}@keyframes u57c491c1{100%{transform:translate(-0.25em, -0.5em)}}.home .irelia{background-image:url(irelia.e0be2f09ed02eee078893c4a13730cd2.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:21.61%;height:21.61%;left:82.55%;top:82.55%;animation:uee8dab63 0.5s ease-in-out 0.25s alternate infinite}@keyframes uee8dab63{0%{transform:translate(0.15em, -0.5em)}}.home .miss-fortune{background-image:url(miss_fortune.216f21ebf57c8120284c217d4e4f6027.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:41.93%;height:72.87%;left:56.51%;top:36.85%;animation:u957afb34 0.5s ease-in-out alternate infinite}@keyframes u957afb34{100%{transform:translateY(-0.5em)}}@media (max-width: 480px){.home .nav{position:absolute;width:92%;height:auto;left:4%;top:1.5em}.home .featherknight{position:absolute;width:110%;height:56.25%;left:-5%;top:22%}.home .rocket{position:absolute;width:200%;left:-70%;top:6%}.home .heading{position:absolute;width:96%;height:20%;left:2%;top:65%}.home .heading .description{top:85%}.home .background{background-size:cover}.home .champions{display:none}}</style>
+      <style>.nav{position:absolute;width:38.64%;height:auto;left:59.09%;top:4.67%}@media (min-width: 481px){.nav{z-index:1}}.nav>.body{display:flex;align-items:center;justify-content:center;height:auto}.nav-button{width:37.5%;height:auto}.nav-button .body{position:relative;width:100%;padding-bottom:68.96552%;position:relative}.nav-wrapper{position:absolute;width:120%;height:120%;left:-10%;top:-10%;transition:all .25s ease-out;transition:all .25s ease-out;cursor:pointer;transform:scale(0.9) skewY(-5deg) translateY(-1.25em)}.nav-wrapper::before{position:absolute;width:53%;height:250%;left:23%;top:-200%;content:'';border:0.2em solid #444}.nav-wrapper.active,.nav-wrapper:hover{animation:uc2b0b2d2 0.35s ease-in-out;transform:none}@keyframes uc2b0b2d2{0%{transform:scale(0.9) skewY(-5deg) translateY(-1.25em)}15%{transform:scale(0.925) skewY(-7deg) translateY(-1.5em)}65%{transform:skewY(1deg) translateY(1em)}}.nav-wrapper.active{filter:brightness(1.05) drop-shadow(0 0 2.5em #e23500)}@media (max-width: 480px){.nav-wrapper.active{filter:brightness(1.05) drop-shadow(0 0 0.5em #e23500)}}.nav-wrapper.highlight .nav-image{animation:u69437c17 0.75s ease-out alternate infinite}@keyframes u69437c17{100%{filter:drop-shadow(0 0 #fff) drop-shadow(0 0 rgba(255,255,255,0.6))}}.nav-image{background-image:url(button_page.81a75ccd809be478b6996aa1824b1345.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:100%;left:0;top:0}.nav-shop::after{background-image:url(text_shop.022836481b3443c55681ffedd208c2f3.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:44.2%;height:49.89%;left:26%;top:23%;content:''}.nav-bingo::after{background-image:url(text_pengu.afed7056f34dd2fec8347b481a8f084a.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:57.18%;height:45.1%;left:21%;top:24.5%;content:''}.nav-flash-sale::after{background-image:url(text_flash_sale.5378cdccb546bcd52e136f1c842e2e71.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:49.8%;height:45.1%;left:24%;top:28.5%;content:''}</style>
+      <style>.bingo-heading{position:absolute;width:100%;height:100%;left:0;top:0}.bingo-heading .body{position:relative;width:100%;padding-bottom:35.97122%}.bingo-heading .letters{position:absolute;width:100%;height:100%;left:0;top:0}.bingo-heading .letters>*{transform-origin:50% 100%}.bingo-heading .letters>.i{background-image:url(letter_e.898ad12acb147d13a652b2d28ebde745.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:14.28%;height:48.11%;left:25.51%;top:18.45%;animation:u9d8b772a 1.5s ease-in-out -1s alternate infinite}@keyframes u9d8b772a{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.bingo-heading .letters>.g{background-image:url(letter_g_1.5050543a6f8cf9ca8b2330a2b8a6ed97.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:15.59%;height:47.32%;left:54.95%;top:13.69%;animation:ua6f26463 1.5s ease-in-out -.75s alternate infinite}@keyframes ua6f26463{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.bingo-heading .letters>.b{background-image:url(letter_p.29edbfd6fa6dcdd1f89df67c4b7ecf4b.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:20.86%;height:55.87%;left:7.9%;top:14.7%;animation:u267b0493 1.5s ease-in-out 0s alternate infinite}@keyframes u267b0493{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.bingo-heading .letters>.n{background-image:url(letter_n_1.bf9e66ffae2b7704a54125100174c02e.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:19.83%;height:47.73%;left:36.77%;top:15.79%;animation:u787a3810 1.5s ease-in-out -.25s alternate infinite}@keyframes u787a3810{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.bingo-heading .letters>.o{background-image:url(letter_u.0719f85c6b16ea2488ca340873dd71ce.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:23.98%;height:49.45%;left:66.45%;top:15.29%;animation:u436418cf 1.5s ease-in-out -.5s alternate infinite}@keyframes u436418cf{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.bingo-heading .stars{position:absolute;width:100%;height:100%;left:0;top:0;animation:uff5140ae 1s ease-in alternate infinite}@keyframes uff5140ae{100%{opacity:0.75}}.bingo-heading .stars .star-1{background-image:url(star.12daec96ba0c1f9e7e2b21b031d0d66a.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:8.6%;height:22.92%;left:.32%;top:38.99%}.bingo-heading .stars .star-2{background-image:url(star.12daec96ba0c1f9e7e2b21b031d0d66a.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:7.1%;height:19.05%;left:2.47%;top:69.35%}.bingo-heading .stars .star-3{background-image:url(star.12daec96ba0c1f9e7e2b21b031d0d66a.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:4.84%;height:12.8%;left:9.89%;top:84.82%}.bingo-heading .stars .star-4{background-image:url(star.12daec96ba0c1f9e7e2b21b031d0d66a.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:5.91%;height:17.26%;left:91.72%;top:5.36%}.bingo-heading .stars .star-5{background-image:url(star.12daec96ba0c1f9e7e2b21b031d0d66a.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:5.16%;height:13.69%;left:94.73%;top:24.7%}.bingo-heading .stars .star-6{background-image:url(star.12daec96ba0c1f9e7e2b21b031d0d66a.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:3.44%;height:9.23%;left:93.55%;top:43.75%}</style>
+      <style>.scrollable{display:flex;width:100%;height:100%;-webkit-overflow-scrolling:touch}.scrollable>.scrollable-body{scrollbar-width:none;-ms-overflow-style:none;flex-grow:1;overflow:auto}.scrollable>.scrollable-body::-webkit-scrollbar{display:none}.scrollable>.scrollable-scrollbar{width:.3em;border-radius:.15em;background-color:#222;cursor:pointer;overflow:hidden}.scrollable-scrollbar>.scrollable-thumb{top:0;width:.3em;border-radius:.15em;background-color:#555}@media (max-width: 480px){.scrollable-scrollbar>.scrollable-thumb{transition:transform 0.05s linear}}.shop{display:flex;align-items:center;justify-content:center;flex-direction:column}.shop .button{background-image:url(button.54b73d0d4445374ae99354dc8a927880.png);background-size:100% 100%;background-repeat:no-repeat}.shop .user{position:absolute;width:30%;height:4.5%;left:8.54%;top:-7.24%;display:flex;align-items:center;justify-content:flex-end;flex-direction:row-reverse}.shop .user .username{margin-left:0.5em}.shop .background{background-image:url(background.008090f90fa50a09e7b02709d836f721.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:100%;left:0;top:0}.shop .foreground{background-image:url(foreground.434cf2a2aa3537f66b61b8c69e05f3d0.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:22.96%;left:0;top:77.04%;pointer-events:none}.shop .little-legend-1{background-image:url(abyssia.1a67b1a417d3f719515aac8143fa3f48.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:25.21%;height:36.76%;left:-6.56%;top:-5%;animation:u22c4104c 0.5s ease-in-out alternate infinite;transform-origin:45% 50%}@keyframes u22c4104c{0%{transform:translateY(-0.25em);filter:brightness(1.1)}100%{transform:translateX(0.05em) rotate(-0.5deg)}}.shop .little-legend-2{background-image:url(squink.1774538d2e8536b66628e2ca174d8443.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:25.57%;height:46.2%;left:81.46%;top:72.41%;animation:ucec5f289 0.5s ease-in alternate infinite}@keyframes ucec5f289{100%{transform:translateY(-0.25em);filter:brightness(1.15)}}.shop .effect-1,.shop .effect-2{animation:u5015204e 5s ease-in-out alternate infinite}@keyframes u5015204e{0%{opacity:0.25}100%{opacity:0.5}}.shop .effect-1{background-image:url(effect.4f3d63705810ffa120f72ac73147d80e.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:51.51%;height:59.44%;left:-15.21%;top:6.85%;content:''}.shop .effect-2{background-image:url(effect.4f3d63705810ffa120f72ac73147d80e.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:51.51%;height:59.44%;left:66.35%;top:-15.37%;content:'';transform:scaleX(-1)}.shop .bubble-2{background-image:url(bubble.9d362d02a6b5e63ee8b53abd891d11d4.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:6.34%;height:11.63%;left:75.42%;top:96.06%;content:'';animation:udb60d5b1 10s linear infinite;pointer-events:none}@keyframes udb60d5b1{20%{transform:translate(-1.5em, -3em)}50%{opacity:0.75;transform:translate(-2.5em, -5em)}75%{opacity:0;transform:translate(-3em, -6em)}100%{opacity:0}}.shop .bubble-1{background-image:url(bubble.9d362d02a6b5e63ee8b53abd891d11d4.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:4.43%;height:7.69%;left:95.45%;top:75.74%;content:'';animation:u2d491a70 7s linear infinite}@keyframes u2d491a70{10%{transform:translate(0.5em, -3.5em)}50%{opacity:1;transform:translate(2.5em, -6em)}75%{opacity:0;transform:translate(3em, -6em)}100%{opacity:0}}.shop .topup{font-size:1.35em}.shop-body{position:absolute;width:77.08%;height:101.2%;left:11.46%;top:13.06%;height:100%;padding:0 4% 0 2%;background-size:cover}.shop-body .scrollable>.scrollable-scrollbar{height:57%;transform:translateY(7em)}.shop-search{display:flex;align-items:center;justify-content:start;margin:3em 0 0 2em}.shop-input{display:flex;align-items:center;justify-content:start;width:28em}.shop-input .drop-down{position:relative}.shop-input .drop-down .list{position:absolute;width:100%;height:auto;left:0;top:100%;transition:all .25s ease-out;background:linear-gradient(to right, #0e0049, #610099);padding:0.3em 0;text-align:center;opacity:0;z-index:1;pointer-events:none;cursor:pointer}.shop-input .drop-down .list>*{padding:0.2em}.shop-input input{transition:all .35s ease-out;width:10em;border:0.1em solid #36d1dc;padding:0.35em;border-radius:0.75em;background:linear-gradient(to right, #0e0049, #610099);color:white;text-align:center}.shop-input input::placeholder{opacity:1;color:#9d85aa}.shop-input .drop-down:hover input,.shop-input input:focus,.shop-input input:hover{width:15.5em;border-bottom-left-radius:0;border-bottom-right-radius:0}.shop-input .drop-down:hover input ~ .list,.shop-input input:focus ~ .list,.shop-input input:hover ~ .list{border:0.1em solid #36d1dc;border-top:0;border-bottom-left-radius:0.75em;border-bottom-right-radius:0.75em;opacity:1;pointer-events:initial}.shop-input>.line-2{display:flex;align-items:center;justify-content:center;position:relative;flex-grow:1}.shop-input>.line-2 .body{transition:all .35s ease-out;display:inline-block;position:relative;width:100%;height:0.1em;background-color:#6af2f8;margin-left:1em}.shop-input>.line-2::after{position:absolute;width:1.05em;height:1.05em;right:0;top:-.5em;content:'';right:-2em;border:0.2em solid #6af2f8;border-radius:1em}.shop-items{display:flex;align-items:start;justify-content:start;margin:1.5em 2em 10em 0;flex-wrap:wrap}.shop-item{display:flex;align-items:center;justify-content:center;position:relative;margin-bottom:1em;width:25%;height:auto}.shop-item>.body{position:relative;width:75.71%;height:auto}.shop-item .box{position:relative;width:100%;padding-bottom:108.85728%;position:relative}.shop-item .box .body{position:absolute;width:100%;height:100%;left:0;top:0}.shop-item .box .background{background-image:url(item.1252ff16e1b76b90b2363bc0c69fde23.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:100%;left:0;top:0;transition:all .25s ease-out;cursor:pointer}.shop-item .box .background::after{background-image:url(item_hover.52d30e6dead83f09bf986193d775fcaa.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:103.86%;height:103.86%;left:-1.93%;top:-1.93%;content:'';transition:all .25s ease-out;opacity:0}.shop-item .box .background:hover::after{opacity:1}.shop-item .box .image{position:absolute;width:87.5%;height:80.25%;left:6.35%;top:5.83%;pointer-events:none}.shop-item .box .image>img{display:block;width:100%;height:100%}.shop-item .box .image::after{background-image:url(item_shadow.2cb915c846fd63e0bdd5a07d79d803a0.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:30%;height:12%;left:35%;top:81%;content:''}.shop-item .discount{background-image:url(star.8a1d2a54c6b38cb96425fc881cb50fb0.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:2.82em;height:2.82em;left:71%;top:4%;display:flex;align-items:center;justify-content:center}.shop-item .discount>*{text-shadow:0 0 .125em #30048b,0 0 .125em #30048b,0 0 .125em #30048b,0 0 .125em #30048b,0 0 .125em #30048b,0 0 .125em #30048b,0 0 .125em #30048b,0 0 .125em #30048b;font-size:1.25em;font-weight:bold}.shop-item .title{display:flex;align-items:center;justify-content:center;background:linear-gradient(to right, #002777, #19005d);height:2em;padding:0 1em;border-radius:1em;color:#ffdc64;text-transform:uppercase;white-space:pre;overflow:hidden}.shop-item .title>*{width:100%;height:100%}.shop-item .action{display:flex;align-items:center;justify-content:space-between;margin-top:0.75em}.shop-item .price{background-image:url(button_rp.ed3783c5b21813855d822aba32b16ace.png);background-size:100% 100%;background-repeat:no-repeat;width:4.3em;height:2.27em;padding-top:0.15em;text-align:center}.shop-item .price>*{display:inline-block;vertical-align:middle}.shop-item .rp{background-image:url(rp.be1038afe59064fec6c62a3a55ef3b2e.png);background-size:100% 100%;background-repeat:no-repeat;display:inline-block;width:1.25em;height:1.25em;margin-left:0.15em}.shop-item .basic-button{width:6.2em}@media (min-width: 481px){.shop-body{background-image:url(background_pattern.87f13fd81f546335231bd6d587a52670.png);background-size:100% 100%;background-repeat:no-repeat;border:.2em solid;border-image:linear-gradient(to bottom, #0ec2e6, #b2fefa) 1}.shop>.scrollable>.scrollable-body{position:absolute;width:100%;height:100%;left:0;top:0;overflow:hidden}.shop>.scrollable>.scrollable-scrollbar{display:none}}@media (max-width: 480px){.shop{position:absolute;width:100%;height:100%;left:0;top:0;scrollbar-width:none;-ms-overflow-style:none;display:block;overflow-x:hidden}.shop::-webkit-scrollbar{display:none}.shop>.scrollable>.scrollable-scrollbar{height:95%;transform:translate(-0.5em, 2.5%)}.shop-body,.shop-body .scrollable{height:auto}.shop .nav{position:absolute;width:92%;height:auto;left:4%;top:unset;position:relative;margin-top:1em}.shop-body{position:static;width:100%}.shop-body .scrollable-scrollbar{display:none}.shop-search{margin:1.85em 0 0 2%}.shop-search .drop-down:hover input,.shop-search input:focus,.shop-search input:hover{width:13em}.shop .user{position:absolute;width:auto;height:auto;left:unset;top:unset;position:relative;margin-left:1em}.shop .username{position:absolute;width:auto;height:100%;right:0;top:-1.85em;font-size:1.25em}.shop .line-2{display:flex;align-items:center;justify-content:center}.shop .line-2 .body{margin-left:0}.shop .line-2::before{content:"";display:inline-block;width:1.05em;height:1.05em;border:0.2em solid #6af2f8;margin:0 1em;border-radius:1em;flex-shrink:0}.shop .line-2::after{content:none}.shop-items{margin:1.5em 0}.shop-item{width:50%}.shop-item>.body{width:82%}.shop .background{position:fixed;background-size:cover}.shop .topup,.shop .foreground,.shop .little-legend-1,.shop .little-legend-2,.shop .bubble-1,.shop .bubble-2{display:none}}</style>
+      <style>.scrollable{display:flex;width:100%;height:100%;-webkit-overflow-scrolling:touch}.scrollable>.scrollable-body{scrollbar-width:none;-ms-overflow-style:none;flex-grow:1;overflow:auto}.scrollable>.scrollable-body::-webkit-scrollbar{display:none}.scrollable>.scrollable-scrollbar{width:.3em;border-radius:.15em;background-color:#222;cursor:pointer;overflow:hidden}.scrollable-scrollbar>.scrollable-thumb{top:0;width:.3em;border-radius:.15em;background-color:#555}@media (max-width: 480px){.scrollable-scrollbar>.scrollable-thumb{transition:transform 0.05s linear}}</style>
+      <style>.button{transition:all .25s ease-out;cursor:pointer;text-shadow:0 0 1px #420800,0 0 1px #420800,0 0 1px #420800,0 0 1px #420800,0 0 1px #420800,0 0 1px #420800,0 0 1px #420800,0 0 1px #420800;display:inline-block;width:6.41em;height:2.27em;padding-top:0.35em;text-align:center;font-family:'iCiel Cadena', sans-serif;color:#fff7d3;text-transform:uppercase;flex-shrink:0}.button:hover{filter:brightness(1.375) drop-shadow(0 0 .25em #ff7e00)}</style>
+      <style>.topup{position:absolute;width:4.43%;height:13.61%;left:4.79%;top:31.76%;display:flex;align-items:center;justify-content:center;transition:all .25s ease-out;cursor:pointer;transition:filter .25s ease-out;font-family:'UTM Kabel KT', sans-serif;text-align:center;text-transform:uppercase;background-color:#1cffe1cc;border-radius:0.5em}.topup:hover{filter:brightness(1.375)}</style>
+      <style>.modal{position:absolute;width:100%;height:100%;left:0;top:0;background-color:#000a;color:#ffdc64}.modal-frame{position:absolute;width:30.47%;left:34.84%;top:43.98%}.modal-wrapper{position:relative;width:100%;padding-bottom:100%}.modal-border,.modal-body{border-radius:0.5em}.modal-border{position:absolute;width:100%;height:100%;left:0;top:0;padding:0.15em;background:linear-gradient(to bottom, #0ed2f7, #b2fefa)}.modal-body{background:linear-gradient(to bottom, #1f0045, #310860);width:100%;height:100%}.modal .popup-close{position:absolute;width:2.5em;height:2.5em;top:-.75em;transition:all .25s ease-out;cursor:pointer;right:-0.75em;border:1px solid #0ed2f7;background-color:#1d0869;border-radius:50%}.modal .popup-close:hover{filter:brightness(1.375)}.modal .popup-close::before{display:inline-block;background-image:linear-gradient(to bottom, #0ed2f7, #b2fefa);background-clip:text;-webkit-background-clip:text;color:transparent;content:"X";display:block;font-size:1.6em;font-family:'iCiel Cadena', sans-serif;white-space:pre;text-align:center;text-transform:uppercase}@media (max-width: 480px){.modal{position:fixed}}</style>
+      <style>.popup{position:absolute;width:100%;height:100%;left:0;top:0}</style>
+      <style>.marquee{position:relative;color:#ffdc64;text-transform:uppercase;white-space:pre;overflow:hidden}.marquee>*{position:absolute;width:auto;height:100%;left:0;top:0;display:flex;align-items:center;justify-content:center}</style>
+      <style>.modal.information.rewards .scrollable-body{padding:0 8.75% 0 4%}.modal.information.rewards.groups .body{display:flex;align-items:center;justify-content:space-between;margin-top:0.5em;flex-wrap:wrap}.modal.information.rewards.groups .body>*{width:48%;margin-top:1.5em}.modal.information.rewards.groups .body .images{display:flex;align-items:center;justify-content:space-between;border:0.15em solid #ee097966;background-color:#190058;border-radius:0.5em}.modal.information.rewards.groups .body .images img{width:33.33333%}.modal.information.rewards.groups .body .images img:first-child{border-top-left-radius:0.6em;border-bottom-left-radius:0.6em}.modal.information.rewards.groups .body .images img:last-child{border-top-right-radius:0.6em;border-bottom-right-radius:0.6em}.modal.information.rewards.groups .body .title{font-size:1.5em;margin-top:0.35em}.modal.information.rewards.items .body{display:flex;align-items:center;justify-content:space-around;width:100%;margin-top:3em;flex-wrap:wrap}.modal.information.rewards.items .body>*{display:inline-flex;align-items:center;justify-content:center;flex-direction:column;max-width:33.33333%}.modal.information.rewards.items .body .border{background-image:url(item_border.1f87015633e088c0e2b21049f818cec1.png);background-size:100% 100%;background-repeat:no-repeat;width:10em;height:10em;padding:0.175em}.modal.information.rewards.items .body .image,.modal.information.rewards.items .body .image img{width:100%;height:100%}.modal.information.rewards.items .body .image img{border-radius:1em}.modal.information.rewards.items .body .title{font-size:1.35em;margin-top:0.45em}@media (max-width: 480px){.modal.information.rewards .scrollable-body{padding:2em 2em 0 2em}.modal.information.rewards .scrollable-body .content{padding:0}.modal.information.rewards.groups .body{margin-top:2em}.modal.information.rewards.groups .body>*{width:100%;margin:0 0 1.5em 0}.modal.information.rewards.groups .body>* .title{font-size:1.25em}.modal.information.rewards.items .modal-frame{position:absolute;width:80%;height:auto;left:10%;top:20.91%}.modal.information.rewards.items .modal-wrapper{padding-bottom:none}.modal.information.rewards.items .modal-border,.modal.information.rewards.items .modal-body{height:auto}.modal.information.rewards.items .message,.modal.information.rewards.items .description{display:none}.modal.information.rewards.items .message.mobile{display:inline-block}.modal.information.rewards.items .description.mobile{display:block}.modal.information.rewards.items .body{margin-top:2em}.modal.information.rewards.items .body>*{max-width:50%;margin-bottom:1em}.modal.information.rewards.items .body .border{width:6.5em;height:6.5em}.modal.information.rewards.items .body .title{font-size:1.25em}}</style>
+      <style>.modal.information table{width:100%;border-collapse:collapse}.modal.information th,.modal.information td{border:1px solid #ffdc64;padding:1%;text-align:center}.modal.information .modal-frame{position:absolute;width:79.69%;height:62.04%;left:10%;top:24.91%}.modal.information .modal-wrapper{position:relative;width:100%;padding-bottom:43.79242%}.modal.information .modal-border{position:absolute;width:100%;height:100%;left:0;top:0}.modal.information .modal-body{text-align:center;padding:0.1em 6.76% 0.1em 4%}.modal.information .modal-body .content{padding:6% 10%}.modal.information .scrollable-body{padding:0 4%}.modal.information .scrollable-body .content{display:flex;align-items:center;justify-content:center;flex-direction:column;padding:3em 0;flex-wrap:wrap}.modal.information .scrollable-scrollbar{height:60%;transform:translateY(33%)}.modal.information .message{display:inline-block;background-image:linear-gradient(to bottom, #0ed2f7, #b2fefa);background-clip:text;-webkit-background-clip:text;color:transparent;font-size:2em;font-family:'iCiel Cadena', sans-serif;text-transform:uppercase}.modal.information .description{font-size:1.15em;margin-top:1em}.modal.information .body{margin-top:1.5em}.modal.information .mobile{display:none}@media (min-width: 481px){.modal.information .modal-border{background-image:url(popup.2587d09df1d5c39ec2281fe788078a5a.png);background-size:100% 100%;background-repeat:no-repeat}.modal.information .modal-body{background:none}.modal.information .popup-close{right:5.5%;top:5%}.modal.information .body .title{height:1.25em;overflow:hidden}}@media (max-width: 480px){.modal.information .modal-frame{position:absolute;width:80%;height:auto;left:10%;top:20.91%}.modal.information .modal-wrapper{position:relative;width:100%;padding-bottom:133.33333%}.modal.information .scrollable-scrollbar{height:86%;transform:translate(-0.5em, 10%)}.modal.information .modal-body{padding:0}.modal.information .modal-body>.content{padding:6% 10% 2%}.modal.information .message{font-size:1.4em}.modal.information .description{font-size:1em;margin-top:0.75em}}.modal.information.rules .body{font-size:1.15em;width:100%;text-align:justify}.modal.information.rules .body h1{font-size:1.35em}.modal.information.rules .body h2{font-size:1.25em}.modal.information.rules .body h3{font-size:1.15em}.modal.information.rules .body>* ~ *{margin-top:1em}@media (max-width: 480px){.modal.information.rules .body{font-size:1em;margin-top:1em}.modal.information.rules .scrollable-body .content{padding:1em 0}}</style>
+      <style>.modal.confirm .modal-frame{position:absolute;width:26.25%;height:46.67%;left:36.88%;top:33.06%}@media (max-width: 480px){.modal.confirm .modal-frame{width:80%;left:10%}}.modal.confirm .modal-body{padding:1em 2.5em 2em;text-align:center}.modal.confirm .modal-body>*{display:flex;align-items:center;justify-content:space-around;flex-direction:column;height:100%}.modal.confirm .single{font-size:1.15em}.modal.confirm .single .input,.modal.confirm .single .total>.label{display:none}.modal.confirm .image{position:relative;margin:0 auto;width:9.5em;height:9.5em}.modal.confirm .image img{width:100%;height:100%}.modal.confirm .title{font-size:1.25em;margin-top:0.35em}.modal.confirm .price{color:white}.modal.confirm .increase,.modal.confirm .decrease{background-image:url(next.91d20640e2d972d451f3f9fee50b3d80.png);background-size:100% 100%;background-repeat:no-repeat;display:inline-block;width:1em;height:1em;vertical-align:middle;cursor:pointer}.modal.confirm .decrease{margin-left:0.5em;transform:scaleX(-1)}.modal.confirm input{margin:0 0.25em;width:2em;border:0;background-color:inherit;text-align:center;appearance:none;-webkit-appearance:none;-moz-appearance:textfield}.modal.confirm input::placeholder{color:#ff0037;opacity:1}.modal.confirm .action{position:absolute;width:100%;height:3em;left:0;bottom:0;display:flex;align-items:center;justify-content:center;bottom:-1.5em}</style>
+      <style>@media (max-width: 480px){.modal.success .modal-frame,.modal.failure .modal-frame{width:80%;left:10%}}.modal.success .modal-wrapper,.modal.failure .modal-wrapper{position:relative;width:100%;padding-bottom:41.36847%}.modal.success .modal-body,.modal.failure .modal-body{display:flex;align-items:center;justify-content:center;padding:0;text-align:center;overflow:hidden}.modal.success .modal-body::before,.modal.failure .modal-body::before{opacity:0.75}.modal.success .modal-body::after,.modal.failure .modal-body::after{animation:u3db63a6d 0.85s ease-in-out alternate infinite}@keyframes u3db63a6d{0%{transform:rotate(-1.5deg)}100%{transform:rotate(1.5deg)}}.modal.success .modal-body>*,.modal.failure .modal-body>*{display:inline-block;background-image:linear-gradient(to bottom, #0ed2f7, #b2fefa);background-clip:text;-webkit-background-clip:text;color:transparent;font-size:1.6em;font-family:'iCiel Cadena', sans-serif;text-transform:uppercase}.modal.success .modal-body{padding-left:50%}.modal.success .modal-body::before{background-image:url(stars.9d6ef7cd4e29cda1d2aed1376bffe6fa.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:58.97%;height:88.84%;left:-6%;top:5%;content:''}.modal.success .modal-body::after{background-image:url(dango.e3fa1f529b190b266f62a6e09fc61907.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:54.53%;height:108.26%;left:-5%;top:-3%;content:'';transform-origin:50% 60%}.modal.failure .modal-body{padding-right:32%}.modal.failure .modal-body::before{background-image:url(stars.9d6ef7cd4e29cda1d2aed1376bffe6fa.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:53.073%;height:88.84%;right:0;top:7%;content:''}.modal.failure .modal-body::after{background-image:url(fuwa.6fb2a003209a397cb3afa5811640ac8b.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:44.61%;height:97.52%;right:0;top:15%;content:'';right:-9%;transform-origin:35% 90%}.modal.failure .modal-body>*{font-size:1.5em;line-height:1.35}</style>
+      <style>.bingo{position:absolute;width:100%;height:100%;left:0;top:0}.bingo .unavailable .button{background-image:url(button_unavailable.012856d138244283784f8ba2901b1c74.png);background-size:100% 100%;background-repeat:no-repeat}.bingo .background{background-image:url(background.f23eab29348e1c7f209434d5ed223584.png)}.bingo .bingo-heading{position:absolute;width:44.87%;height:28.82%;left:11.41%;top:2.22%;cursor:pointer}.bingo .bingo-heading .letters{filter:drop-shadow(0 1px 0.15em #fff) drop-shadow(1px 0 0.15em #fff) drop-shadow(1px 1px 0.15em #fff)}@media (min-width: 1054px) and (max-width: 1056px) and (min-height: 637px) and (max-height: 639px){.bingo .bingo-heading{position:absolute;width:47.01%;height:31.97%;left:6.59%;top:4.16%}.bingo .combo .timer{left:21.6%;top:26.77%}}@media (max-width: 480px){.bingo .wrapper>.combo-heading{margin-top:0.75em}.bingo .wrapper>.combo-heading .timer{left:26%}.bingo .bingo-heading{position:absolute;width:100%;height:auto;left:0;top:0;position:relative}.bingo .wrapper>.user{margin-bottom:-0.85em}}</style>
+      <style>.scrollable{display:flex;width:100%;height:100%;-webkit-overflow-scrolling:touch}.scrollable>.scrollable-body{scrollbar-width:none;-ms-overflow-style:none;flex-grow:1;overflow:auto}.scrollable>.scrollable-body::-webkit-scrollbar{display:none}.scrollable>.scrollable-scrollbar{width:.3em;border-radius:.15em;background-color:#222;cursor:pointer;overflow:hidden}.scrollable-scrollbar>.scrollable-thumb{top:0;width:.3em;border-radius:.15em;background-color:#555}@media (max-width: 480px){.scrollable-scrollbar>.scrollable-thumb{transition:transform 0.05s linear}}.combo{position:absolute;width:100%;height:100%;left:0;top:0}.combo .button{background-image:url(button.51ba8adbd93b3545d91cdf61898098e8.png);background-size:100% 100%;background-repeat:no-repeat;font-size:1.2em}.combo .unavailable .button{pointer-events:none}.combo .timer{position:absolute;width:16.7%;left:25.6%;top:24.77%;padding:0.6em 1.5em 0.6em 1.5em;font-family:'UTM BryantLG';font-weight:bold;text-align:center;border-radius:1.2em;background-color:#113d8c;white-space:pre;filter:drop-shadow(0.2em 0.2em 0 #fff) drop-shadow(0.2em 0.2em 0.2em #006eff)}.combo .topup{position:absolute;width:3.39%;height:10.28%;left:95.63%;top:86.39%;font-size:1.1em}.combo .background{position:absolute;width:100%;height:100%;left:0;top:0}.combo .username{font-size:1.25em}.combo-actions{position:absolute;left:1%;top:1%;z-index:1}.combo-wrapper{position:absolute;width:89.69%;height:64.81%;left:5.26%;top:32.22%}.combo-items{position:absolute;width:100%;height:100%;left:0;top:0;display:flex;align-items:start;justify-content:space-around;padding:2em 1em;background-color:#250081aa;border-radius:1.5em;flex-wrap:wrap}.combo-item{width:15%;height:auto}.combo-item .wrapper{position:relative;width:100%;padding-bottom:250%;position:relative}.combo-item .body{display:flex;align-items:center;justify-content:space-between;flex-direction:column;position:absolute;width:100%;height:100%;left:0;top:0;text-align:center}.combo-item .image{display:flex;align-items:center;justify-content:center;position:relative;border:1px solid #369eff;border-radius:4.5em;width:100%;height:56.79%;background-color:#2f0e58;overflow:hidden}.combo-item .image img{height:100%;filter:drop-shadow(0 0 1em #0b4e91)}.combo-item .title{display:inline-block;background-image:linear-gradient(to bottom, #f7ff1b, #ffa820);background-clip:text;-webkit-background-clip:text;color:transparent;font-size:1.45em;font-family:'iCiel Cadena', sans-serif;white-space:pre}.combo-item .original-price{font-size:1.25em;text-decoration:line-through}.combo-item .price{font-size:2em;font-family:'UTM Kabel KT'}.combo-item .action{margin-top:0.5em}.combo .status{position:relative;width:85%;height:1.5em;padding:0.125em 0.5em;font-weight:bold;background-color:#811cffdd;border-radius:1em;overflow:hidden}.combo .status>*{position:absolute;width:100%;height:100%;left:0;top:0;white-space:pre}.combo .status .text::before{content:"";background-image:url(crown.b3386880157547b62634eb1b2ecd8274.png);background-size:100% 100%;background-repeat:no-repeat;display:inline-block;margin-right:0.5em;width:1.28em;height:0.9em;vertical-align:middle}.combo .progress{background-color:#e21cff99;border-radius:0.75em}.combo .discount{background-image:url(polygon.ef53bcbe32262a1d4f57d655c87d3b1e.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:3.9em;height:3.9em;right:0;top:0;display:flex;align-items:center;justify-content:center;right:-1em;padding:0 0.5em 0.5em 0}.combo .discount>*{text-shadow:0 0 .125em #75130e,0 0 .125em #75130e,0 0 .125em #75130e,0 0 .125em #75130e,0 0 .125em #75130e,0 0 .125em #75130e,0 0 .125em #75130e,0 0 .125em #75130e;font-size:1.55em;font-family:'UTM Kabel KT', sans-serif}.combo-buy{position:absolute;width:32.4%;height:6.85%;left:62.6%;top:24.17%}.combo-buy>.body{position:absolute;width:100%;height:100%;left:0;top:0;display:flex;align-items:center;justify-content:space-around;animation:uad0a80bb 1.5s ease-in-out infinite;padding:0 0.75em;background-color:#7a038acc;border-radius:1.25em}@keyframes uad0a80bb{65%{filter:brightness(1.25)}}.combo-buy::before{position:absolute;width:100%;height:100%;left:0;top:0;content:"";animation:u29e2d4ac 1.5s ease-in-out infinite;background-image:linear-gradient(to right, rgba(255,255,255,0.0666667), rgba(255,255,255,0.6), rgba(255,255,255,0.6), rgba(255,255,255,0.0666667));background-repeat:no-repeat;border-radius:1.25em}@keyframes u29e2d4ac{0%,25%{background-size:0;background-position-x:-15%}50%{background-size:60%}75%,100%{background-size:0;background-position-x:115%}}.combo-buy .button::before,.combo-buy .button::after{content:"";display:inline-block;width:.6em;height:.47em;background-image:url(crown.b3386880157547b62634eb1b2ecd8274.png);background-size:100% 100%;background-repeat:no-repeat;filter:drop-shadow(0 0 1px black)}.combo-buy .button::before{margin-right:0.25em}.combo-buy .text{display:flex;align-items:start;justify-content:center;flex-direction:column;font-family:'UTM BryantLG', sans-serif}.combo-buy .text em{font-size:0.9em}.combo-buy .price{display:flex;align-items:center;justify-content:center}.combo-buy .price>span{display:inline-block;background-image:linear-gradient(to bottom, #ffea8e, #ffd28e, #ff9d14);background-clip:text;-webkit-background-clip:text;color:transparent;font-size:2.37em;font-family:'UTM Kabel KT';filter:drop-shadow(0 0 0.1em #1a0031)}.combo-buy .rp{background-image:url(rp.39cee8722345512f0f91c83998a3f843.png);background-size:100% 100%;background-repeat:no-repeat;display:inline-block;margin-left:0.5em;width:2.2em;height:2.2em}@media (min-width: 481px){.combo .user{margin-bottom:0.5em}.combo .username{margin-bottom:0.65em}}@media (min-width: 1054px) and (max-width: 1056px) and (min-height: 637px) and (max-height: 639px){.combo-wrapper{position:absolute;width:91%;height:61.13%;left:4.55%;top:34.8%}.combo-buy{top:26.5%}}@media (max-width: 480px){.combo>.body{position:absolute;width:100%;height:100%;left:0;top:0;display:flex;align-items:center;justify-content:center;flex-direction:column}.combo .responsive{position:relative;width:92%;flex-grow:1;border-bottom-left-radius:1.5em;border-bottom-right-radius:1.5em;overflow:hidden;will-change:transform}.combo .responsive>.wrapper{position:absolute;width:100%;height:100%;left:0;top:0;display:flex;align-items:center;justify-content:start;flex-direction:column;scrollbar-width:none;-ms-overflow-style:none;overflow:auto}.combo .responsive>.wrapper::-webkit-scrollbar{display:none}.combo .combo-heading{position:relative;margin-top:1.75em;width:100%;height:auto}.combo .combo-heading .heading{position:absolute;width:100%;height:auto;left:0;top:0;position:relative}.combo .combo-heading .timer{position:absolute;width:47%;height:auto;left:52%;top:77%;padding:0.5em 1em}.combo .nav{position:static;width:93%;height:auto;margin:0.75em 0 0.25em}.combo .nav .body>*{transform:none}.combo .nav .body>*::before{content:none}.combo .nav .body>*.active,.combo .nav .body>*:hover{animation:none}.combo-wrapper{position:absolute;width:100%;height:auto;left:0;top:0;position:relative}.combo-items{position:relative;padding:1em}.combo-item{width:43%;padding:1em 0}.combo-buy{position:absolute;width:90%;height:3.36em;left:unset;top:unset;position:relative;margin:0.75em 0}.combo-actions{position:static;width:100%;margin-top:0.5em}.combo-actions>.body{display:flex;align-items:center;justify-content:space-between;flex-direction:row-reverse}.combo .user{display:flex;align-items:center;justify-content:center;flex-shrink:1}.combo .user .button{margin-left:0.5em}.combo .timer,.combo .status{font-size:0.95em}.combo .background{position:fixed;background-size:cover}.combo .topup{display:none}}</style>
+      <style></style>
+      <style>.flash-sale{position:absolute;width:100%;height:100%;left:0;top:0}.flash-sale .heading{position:absolute;width:47.24%;height:auto;left:11.77%;top:2.2%}.flash-sale .heading .body{position:relative;width:100%;padding-bottom:34.57815%;position:relative}.flash-sale .heading .body>*{transform-origin:50% 100%}.flash-sale .text-sale,.flash-sale .flash-1{filter:drop-shadow(0 0 0.15em #1cffb2) drop-shadow(0 0 0.15em #1cffb2)}.flash-sale .text-flash,.flash-sale .flash-2{filter:drop-shadow(0 0 0.15em #ad0a82) drop-shadow(0 0 0.15em #ad0a82)}.flash-sale .text-sale{background-image:url(text_sale.992033328c39ffa969a8a7c402dbf390.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:50.05%;height:80.63%;left:8.34%;top:.63%;animation:u7e4fcdf7 1.5s ease-in-out 0s alternate infinite}@keyframes u7e4fcdf7{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.flash-sale .text-flash{background-image:url(text_flash.9e8d1bf13d2190c93ba677c8180eba88.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:33.15%;height:58.1%;left:58.07%;top:7.3%;animation:u4e435604 1.5s ease-in-out -.5s alternate infinite}@keyframes u4e435604{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.flash-sale .flash-1{position:absolute;width:9.33%;height:44.44%;left:.11%;top:19.68%;animation:u1f196267 1.5s ease-in-out -.75s alternate infinite;transform:rotate(-51deg)}@keyframes u1f196267{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.flash-sale .flash-1::after{background-image:url(flash.58c23cbd5acb582e056dc2ef0543121d.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:100%;height:100%;left:0;top:0;content:'';transform:rotate(-51deg)}.flash-sale .flash-2{background-image:url(flash.58c23cbd5acb582e056dc2ef0543121d.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:10.76%;height:69.52%;left:89.02%;top:2.54%;animation:ud7af8c29 1.5s ease-in-out -1s alternate infinite}@keyframes ud7af8c29{0%{transform:skewX(-0.5deg)}25%{transform:scaleY(0.97)}50%{transform:none}75%{transform:scaleY(0.97)}100%{transform:skewX(0.5deg)}}.flash-sale .text-description{background-image:url(text_description.64e6b3168d580acf4c50026732cdf62d.png);background-size:100% 100%;background-repeat:no-repeat;position:absolute;width:41.49%;height:42.86%;left:12.51%;top:64.44%}.flash-sale .note{position:absolute;left:51.41%;top:89.53%;color:#00f0ff;font-size:1.1em;font-family:'UTM BryantLG'}.flash-sale .unavailable .button{background-image:url(button_unavailable.2abd2b0c1ad9d43e423b1e9f6273249b.png);background-size:100% 100%;background-repeat:no-repeat}.flash-sale .timer{position:absolute;width:16.7%;left:37.4%;top:21.57%;background-color:#aa0a7f;filter:drop-shadow(0.2em 0.2em 0 #ffd71c) drop-shadow(0.2em 0.2em 0.2em #006eff)}.flash-sale .background{background-image:url(background.b2cba9a779653a1b7cef453da92ef233.png)}.flash-sale .status{background-color:#1cffb299}.flash-sale .status .text::before{filter:brightness(10)}.flash-sale .progress{background-color:#ffb400ee}.flash-sale .combo-items{background-color:#40157b99}.flash-sale .combo-items .image{background-color:#0e2d58}.flash-sale .combo-buy>.body{background-color:#bc0b9499}@media (min-width: 1054px) and (max-width: 1056px) and (min-height: 637px) and (max-height: 639px){.flash-sale .heading{position:absolute;width:51.775%;height:32.4615%;left:5.88%;top:3.1%}.flash-sale .combo .timer{position:absolute;width:16.7%;left:34.4%;top:22.77%}}@media (max-width: 480px){.flash-sale .combo-heading{width:97%;left:1.2%;margin-top:0.75em}.flash-sale .combo-heading .note{display:none}}</style>
+   </head>
+   <body cz-shortcut-listen="true">
+      <div id="app">
+         <main class="shop">
+            <div class="background"></div>
+            <div class="effect-1"></div>
+            <div class="effect-2"></div>
+            <div class="scrollable">
+               <div class="scrollable-body">
+                  <nav class="nav">
+                     <div class="body">
+                        <div class="nav-button">
+                           <div class="body">
+                              <div class="nav-wrapper active">
+                                 <div class="nav-image nav-shop"></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="nav-button">
+                           <div class="body">
+                              <div class="nav-wrapper">
+                                 <div class="nav-image nav-bingo"></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="nav-button">
+                           <div class="body">
+                              <div class="nav-wrapper">
+                                 <div class="nav-image nav-flash-sale"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </nav>
+                  <div class="shop-body">
+                     <div class="scrollable">
+                        <div class="scrollable-body">
+                           <div class="shop-search">
+                              <div class="shop-input">
+                                 <div class="line-1"><span class="body"></span></div>
+                                 <div class="drop-down">
+                                    <input placeholder="Tìm kiếm" value="">
+                                    <div class="list">
+                                       <div class="shop-keyword">Vé DTCL</div>
+                                       <div class="shop-keyword">Sân đấu</div>
+                                       <div class="shop-keyword">Trứng Nhóm 8</div>
+                                       <div class="shop-keyword">Trứng Nhóm 7</div>
+                                       <div class="shop-keyword">Trứng Nhóm 6</div>
+                                       <div class="shop-keyword">Trứng Nhóm 5</div>
+                                       <div class="shop-keyword">Trứng Nhóm 4</div>
+                                       <div class="shop-keyword">Trứng Nhóm 3</div>
+                                       <div class="shop-keyword">Trứng Nhóm 2</div>
+                                       <div class="shop-keyword">Trứng Nhóm 1</div>
+                                    </div>
+                                 </div>
+                                 <div class="line-2"><span class="body"></span></div>
+                                 <div class="user">
+                                    <div class="username">MID Faker</div>
+                                    <div class="button">Đăng xuất </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="shop-items">
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-9.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-84.7006px);">10 + 1 Trứng Linh Thú Hoa Linh</span><span class="after" style="transform: translateX(211.999px);">10 + 1 Trứng Linh Thú Hoa Linh</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-9.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(235.088px);">5 Trứng Linh Thú Hoa Linh</span><span class="after" style="transform: translateX(-31.6122px);">5 Trứng Linh Thú Hoa Linh</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>495</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-9.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(91.5613px);">Trứng Linh Thú Hoa Linh</span><span class="after" style="transform: translateX(-160.139px);">Trứng Linh Thú Hoa Linh</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-8-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-177.012px);">15 Trứng Nhóm 8 Khuyến Mãi</span><span class="after" style="transform: translateX(106.688px);">15 Trứng Nhóm 8 Khuyến Mãi</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>1485</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-8-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-177.012px);">10 Trứng Nhóm 8 Khuyến Mãi</span><span class="after" style="transform: translateX(106.688px);">10 Trứng Nhóm 8 Khuyến Mãi</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-8-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-217.395px);">5 Trứng Nhóm 8 Khuyến Mãi</span><span class="after" style="transform: translateX(60.3046px);">5 Trứng Nhóm 8 Khuyến Mãi</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>495</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-8-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-107.199px);">10 + 1 Trứng Linh Thú Huyền Bí</span><span class="after" style="transform: translateX(186.501px);">10 + 1 Trứng Linh Thú Huyền Bí</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-8-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(207.984px);">5 Trứng Linh Thú Huyền Bí</span><span class="after" style="transform: translateX(-55.716px);">5 Trứng Linh Thú Huyền Bí</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>495</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-8-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(65.248px);">Trứng Linh Thú Huyền Bí</span><span class="after" style="transform: translateX(-183.452px);">Trứng Linh Thú Huyền Bí</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Bellswayer-Base.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Thần Lộc 3 Sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Nixie-Base.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Tiên Linh Linh 3 Sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Lightcharger-Base.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Kỳ Lân 3 Sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/TFT-Pass-2.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-119.755px);">Vé Thiên Hà TFT+ bản II</span><span class="after" style="transform: translateX(109.945px);">Vé Thiên Hà TFT+ bản II</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>349</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/BlackHolev3.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before">Sân Đấu Hố Đen</span><span class="after">Sân Đấu Hố Đen</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>269</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Celestialv3.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-79.0355px);">Sân Đấu Thiên Thượng</span><span class="after" style="transform: translateX(154.665px);">Sân Đấu Thiên Thượng</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>269</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Supernovav3.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-129.391px);">Sân Đấu Siêu Tân Tinh</span><span class="after" style="transform: translateX(99.3086px);">Sân Đấu Siêu Tân Tinh</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>269</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Avarosav2.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-301.2px);">Sân Đấu Freljord Hậu Nhân Avarosa</span><span class="after" style="transform: translateX(63.4997px);">Sân Đấu Freljord Hậu Nhân Avarosa</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>269</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Frostguardv3.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(196.074px);">Sân Đấu Freljord Thủ Vệ Băng Giá</span><span class="after" style="transform: translateX(-141.626px);">Sân Đấu Freljord Thủ Vệ Băng Giá</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>269</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/WinterClawv3.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-217.341px);">Sân đấu Freljord Móng Vuốt Mùa Đông</span><span class="after" style="transform: translateX(170.359px);">Sân đấu Freljord Móng Vuốt Mùa Đông</span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>269</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-1-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">10 + 1 Trứng Nhóm 1</div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-2-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">10 + 1 Trứng Nhóm 2</div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Shadow-Isles-Hauntling.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-152.713px);">Hồn Ma Quần Đảo Bóng Đêm </span><span class="after" style="transform: translateX(133.987px);">Hồn Ma Quần Đảo Bóng Đêm </span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Demacian-Silverwing.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Cánh Bạc Demacia </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Molten-Furyhorn.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(-79.0838px);">Quái Sừng Dung Nham </span><span class="after" style="transform: translateX(154.616px);">Quái Sừng Dung Nham </span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Soft-nosed-Molediver.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Chuột Trũi Mũi Mềm</div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Sentinel-Runespirit.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Tinh Linh Cổ Ngữ </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Pengu-Feather.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">
+                                       <div class="marquee"><span class="before" style="transform: translateX(6.20049px);">Hiệp Sĩ Cánh Cụt Pengu </span><span class="after" style="transform: translateX(248.9px);">Hiệp Sĩ Cánh Cụt Pengu </span></div>
+                                    </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Jeweled-Protector.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Hộ Vệ Đá Quý </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Jade-Paddlemar.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Rùa Ngọc Thạch </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Moontipped-Hushtail.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Cáo Tiên Nguyệt Dạ </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-3-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">10 + 1 Trứng Nhóm 3</div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Dango-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Dango </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Fuwa-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Fuwa </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Shisa-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Shisa </div>
+                                    <div class="action">
+                                       <div class="price"><span>150</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-4-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">10 + 1 Trứng Nhóm 4</div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Ossia-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Ossia 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/QiQi-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">QiQi 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Melisma-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Melisma 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-5-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">10 + 1 Trứng Nhóm 5</div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Tocker-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Gà Máy 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Flutterbug-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Bé Bọ 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Craggle-Eggs.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Người Đá 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-6-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">5 Trứng Nhóm 6 </div>
+                                    <div class="action">
+                                       <div class="price"><span>495</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-6-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">10 + 1 Trứng Nhóm 6</div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Squink-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Bạch tuộc 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Abyssia-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Hiệp sĩ cú 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Starmaw-Egg.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">Cá Voi 3 sao</div>
+                                    <div class="action">
+                                       <div class="price"><span>450</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-7-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">5 Trứng Nhóm 7</div>
+                                    <div class="action">
+                                       <div class="price"><span>495</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-7-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">10 + 1 Trứng Nhóm 7</div>
+                                    <div class="action">
+                                       <div class="price"><span>990</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-1-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">1 Trứng Nhóm 1</div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-2-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">1 Trứng Nhóm 2</div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-3-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">1 Trứng Nhóm 3</div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-4-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">1 Trứng Nhóm 4</div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-5-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">1 Trứng Nhóm 5</div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-6-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">1 Trứng Nhóm 6</div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="shop-item">
+                                 <div class="body">
+                                    <div class="box">
+                                       <div class="body">
+                                          <div class="background"></div>
+                                          <div class="image"><img src="https://lienminh.garena.vn/images/articles/huuvuong/2020/TFTshop/Store/Trung-7-Store.png"></div>
+                                       </div>
+                                    </div>
+                                    <div class="title">1 Trứng Nhóm 7</div>
+                                    <div class="action">
+                                       <div class="price"><span>99</span><span class="rp"></span></div>
+                                       <div class="button">Mua ngay </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="scrollable-scrollbar">
+                           <div class="scrollable-thumb" style="transform: translateY(0px);"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="scrollable-scrollbar">
+                  <div class="scrollable-thumb" style="transform: translateY(0px);"></div>
+               </div>
+            </div>
+            <div class="topup">Nạp thẻ</div>
+            <div class="bubble-1"></div>
+            <div class="bubble-2"></div>
+            <div class="foreground"></div>
+            <div class="little-legend-1"></div>
+            <div class="little-legend-2"></div>
+         </main>
+      </div>
+      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=674713053261896&ev=PageView&noscript=1"/></noscript>
+      <script src="index.bundle.js"></script>
+   </body>
+</html>
